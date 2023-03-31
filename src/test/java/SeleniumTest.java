@@ -84,7 +84,6 @@ public class SeleniumTest {
 
         //Check whether the product "iMac" at the price of 111.55 euros is present on the page
         WebElement price = driver.findElement(By.xpath("//a[text()='iMac']/../following-sibling::div[@class='price']"));
-        ///html/body/main/div[2]/div/div/div[2]/div/form/div/div[2]/div[1]/div/span[1]
         Assert.assertTrue(price.getText().contains("111.55€"));
         System.out.println("contains " + price.getText());
         presentationSleep();
